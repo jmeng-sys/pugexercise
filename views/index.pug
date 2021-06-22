@@ -1,0 +1,33 @@
+doctype html
+
+head
+  title #{title}  
+  style.
+    body{ background-color:rgb(230, 225, 224); }
+    h1 {
+    color:green;
+    }
+h1 Welcome #{name} #{date}
+header
+  h1
+    img(src='frog')
+    | Welcome to media frog Page
+  each greeting in greetings
+    h1=greeting
+
+details
+  summary The Chichen Itza Ruins
+  img(src='chichenitza')
+  br
+  summary The palenque Pyrimads
+  img(src='palenque')
+  br
+a(href='register') Register
+br
+a(href='contact') Contact Us 
+br
+a(href='about') About Us 
+br
+a(href='thankyou') Thank You
+footer
+  p This page is Copyright &amp;copy: by Jin

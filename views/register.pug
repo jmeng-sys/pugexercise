@@ -1,0 +1,41 @@
+doctype html
+head
+  title Registration Page
+  style.
+    .container label{
+    display: inline-block;
+    clear: left;
+    width: 150px;
+    }
+    .container input{
+    display: inline-block;
+    border-style: groove;
+    }
+    body{
+    background-color:rgb(230, 225, 224);
+    }
+h1 Welcome #{name}
+h1 Please fill out the registration form
+//- 
+    I used localhost/bouncer.php to showcase that register form takes in data and convey them to a table 
+div.container   
+    form(method='post' action='http://localhost/bouncer.php')
+        label(for='fname') First Name:
+        input#fname(type='text' name='fname')
+        br
+        label(for='lname') Last Name:
+        input#lname(type='text' name='lname')
+        br
+        label(for='address') Address:
+        input#address(type='text' name='address')
+        br
+        label(for='postalcode') Postal Code:
+        input#postalcode(type='text' name='postalcode')
+        br
+        label(for='phone') Phone Number:
+        input#phone(type='text' name='phone')
+        br
+        br
+        input(type='submit' value='Register')
+        input(type='reset' value='Reset')
+a(href='index') Home
